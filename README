@@ -1,0 +1,51 @@
+
+==== NAME ====
+
+Posy::Plugin::LinkList - Posy plugin to give a dynamic list of links
+
+
+==== VERSION ====
+
+This describes version ``0.40'' of Posy::Plugin::LinkList.
+
+
+==== DESCRIPTION ====
+
+This provides a method which can be called from the "head" flavour template
+(if one is using the TextTemplate plugin). When given an array of labels and
+a hash of labels-to-relative-links, will produce a list of links which take
+account of (a) what the current path is and (b) what the current flavour is.
+If the link matches the current path, then only the label is used for that
+link. If the extension part of the link matches the default flavour, then
+the current flavour replaces it.
+
+With extra arguments, will change the style of the list; one can define
+pre_list, post_list, pre_item, post_item, and item separators -- this
+enables one to create an unordered list or a pipe-separated paragraph just
+by changing these values. Or one can give one's own CSS classes to the
+parts. The default is a plain <ul> list.
+
+
+==== REQUIRES ====
+
+    Posy
+    Posy::Core
+    Posy::Plugin::TextTemplate
+
+    Test::More
+
+
+==== AUTHOR ====
+
+    Kathryn Andersen (RUBYKAT)
+    perlkat AT katspace dot com
+    http://www.katspace.com
+
+
+==== COPYRIGHT AND LICENCE ====
+
+Copyright (c) 2004-2005 by Kathryn Andersen
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+

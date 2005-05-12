@@ -1,17 +1,17 @@
 --- #YAML:1.0
 name: Posy-Plugin-LinkList
-version: 0.41
+version: 0.42
 author:
   - Kathryn Andersen
 abstract: Posy plugin to give a dynamic list of links.
 license: perl
 requires:
-  Posy: 0.9
+  Posy: 0.95
   Posy::Plugin::TextTemplate: 0.41
 build_requires:
   Test::More: 0
 provides:
   Posy::Plugin::LinkList:
     file: lib/Posy/Plugin/LinkList.pm
-    version: 0.41
-generated_by: Module::Build version 0.2607
+    version: 0.42
+generated_by: Module::Build version 0.261
